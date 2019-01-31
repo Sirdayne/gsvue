@@ -1,0 +1,22 @@
+[
+  {
+    "value": "BINARY",
+    "label": "yes/no"
+  },
+  {
+    "value": "TEXT",
+    "label": "input"
+  },
+  {
+    "value": "COMBINED",
+    "label": "text and binary"
+  },
+  {
+    "value": "DATE",
+    "label": "mm/dd/yyyy"
+  },
+  {
+    "value": "DIGIT",
+    "label": "number"
+  }
+]

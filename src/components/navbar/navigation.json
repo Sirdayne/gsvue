@@ -1,0 +1,89 @@
+[
+  {
+    "title": "Profile",
+    "url": "/profile",
+    "urls": false
+  },
+  {
+    "title": "Dashboard",
+    "url": "/dashboard",
+    "role": "primary",
+    "urls": [
+      {
+        "name": "Statistics",
+        "value": "/dashboard"
+      },
+      {
+        "name": "Patients",
+        "value": "/dashboard/patients"
+      },
+      {
+        "name": "Doctors",
+        "value": "/dashboard/doctors"
+      }
+    ]
+  },
+  {
+    "title": "Progress Notes",
+    "url": "/progress-notes",
+    "role": "primary",
+    "urls": [
+      {
+        "name": "List",
+        "value": "/progress-notes/list"
+      },
+      {
+        "name": "Create",
+        "value": "/progress-notes/create"
+      }
+    ]
+  },
+  {
+    "title": "Appointments",
+    "url": "/appointments",
+    "role": "primary",
+    "urls": false
+  },
+  {
+    "title": "Health history",
+    "url": "/health-history",
+    "role": "primary",
+    "urls": [
+        {
+          "name": "Questionnaires list",
+          "value": "/health-history/questionnaires/list"
+        },
+        {
+          "name": "Fill in questionnaire",
+          "value": "/health-history/questionnaires/create"
+        },
+        {
+          "name": "Questions list",
+          "value": "/health-history/questions/list"
+        },
+        {
+          "name": "Create question",
+          "value": "/health-history/questions/create"
+        },
+        {
+          "name": "Categories list",
+          "value": "/health-history/categories/list"
+        },
+        {
+          "name": "Create category",
+          "value": "/health-history/categories/create"
+        }
+    ]
+  },
+  {
+    "title": "Super Dashboard",
+    "url": "/super-dashboard",
+    "role": "system",
+    "urls": [
+      {
+        "name": "Clinics",
+        "value": "/super-dashboard/clinics"
+      }
+    ]
+  }
+]

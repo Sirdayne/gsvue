@@ -1,0 +1,41 @@
+$SHADOW = 0 2px 20px 0 rgba(0,0,0,0.1)
+$PRIMARY_COLOR = #22252b
+$BACK_COLOR = #f4f7f6
+$RED = #f96332
+
+.el-table
+  box-shadow $SHADOW
+  border-radius 8px
+
+.el-button:hover
+  box-shadow $SHADOW
+.el-button:focus
+  background #001642
+  color #fff
+
+.el-menu
+  background #fff
+.el-menu-item
+  font-size 12px
+  background #fff
+  &:hover
+    background $BACK_COLOR
+  &.is-active
+    background $BACK_COLOR
+
+.el-submenu__title
+  font-size 12px
+  &:hover
+    background $BACK_COLOR
+  &.is-active
+    background $BACK_COLOR
+
+.el-breadcrumb
+  margin-top 10px
+.color-red
+  .el-breadcrumb__inner
+    color $RED
+    font-weight 100
+
+.b-table
+  font-size 14px

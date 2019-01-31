@@ -1,0 +1,918 @@
+//#1867c0
+$PRIMARY_COLOR = #22252b
+$BACK_COLOR = #f4f7f6
+$APP_PADDING = 20px
+$SHADOW = 0 2px 20px 0 rgba(0,0,0,0.1)
+$RED = #f96332
+$AUTH_BACK_COLOR = #000121
+
+$FONT_1 = Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif
+$FONT_2 = Verdana, Geneva, sans-serif
+$FONT_3 = "Lucida Sans Unicode", "Lucida Grande", sans-serif
+$FONT_FAMILY = 'Muli', Tahoma, sans-serif
+
+::-webkit-scrollbar
+  width 4px
+  height 4px
+  background-color #D3DCE6
+::-webkit-scrollbar-button
+::-webkit-scrollbar-track
+  display none
+::-webkit-scrollbar-thumb
+  background-color #7d7d7d
+::-webkit-scrollbar-thumb:hover
+  background-color #525252
+
+body, .el-button, .el-input__inner, .el-textarea__inner
+  font-family $FONT_FAMILY
+
+.link
+  float left
+  width 100%
+  cursor pointer
+  text-decoration underline
+
+#app
+  float left
+  width 100%
+  color #606266
+  background $BACK_COLOR
+
+.app-container
+  float left
+  width 100%
+  height auto
+  min-height 100vh
+  box-sizing border-box
+  position relative
+
+h1, h2, h3, h4, h5, h6
+  font-weight 700
+
+#header-line
+  float left
+  width 100%
+  box-sizing border-box
+  padding $APP_PADDING
+  line-height 20px
+
+#header-line
+  background $PRIMARY_COLOR
+  color #fff
+  .nav
+    float left
+    width auto
+    position relative
+    color #fff
+    font-size 16px
+    &.no-hover
+      text-decoration none
+    &:hover
+      text-shadow 0 0 1px #fff
+      text-decoration underline
+    .el-select
+      margin-top -10px
+  .right
+    float right
+    .nav
+      margin-left 10px
+  .left
+    float left
+    .nav
+      margin-right 10px
+
+.header-sidebar
+  float left
+  width 50px
+  background $PRIMARY_COLOR
+  color #fff
+  height 100vh
+  position relative
+  .nav
+    float left
+    width 30px
+    height 30px
+    margin 10px
+    position relative
+    color #afafaf
+    border-radius 50%
+    font-size 14px
+    box-sizing border-box
+    padding 6px 0 0 9px
+    cursor pointer
+    i
+      font-size 16px
+    &.no-hover
+      text-decoration none
+    &:hover
+      background #373b40
+    &-power
+      position absolute
+      bottom 36px
+      left 0
+    &-setting
+      position absolute
+      bottom 82px
+      left 0
+    &-logo
+      padding 5px 0 0 6px
+      img
+        width 16px
+        height auto
+        opacity 0.7
+
+.app-content
+  position absolute
+  top 0
+  left 50px
+  width calc(100% - 50px)
+  height 100vh
+  box-sizing border-box
+  overflow auto
+  transition .4s linear
+  background $BACK_COLOR
+  border-left 1px solid #e6e6e6
+  z-index 2
+  &.active
+    left 300px
+    width calc(100% - 300px)
+  &.not-logged
+    left 0
+    width 100%
+
+.banner
+  position fixed
+  bottom 0
+  left 0
+  width 100%
+  height 40px
+  padding 5px
+  box-sizing border-box
+  border 1px solid #dcdfe6
+  background #fff
+  cursor pointer
+  z-index 999
+  img
+    float left
+    height 30px
+    width auto
+    margin 0 20px 0 50px
+  p
+    float left
+    width auto
+    line-height 30px
+    font-size 14px
+
+.float-container
+  float left
+  width 100%
+  padding $APP_PADDING
+  box-sizing border-box
+
+.x-container
+  float left
+  width 100%
+  padding 0 $APP_PADDING
+  box-sizing border-box
+
+.simple-container
+  float left
+  width 100%
+
+.question-option
+  float left
+  width auto
+  margin 5px
+
+.question-title
+  float left
+  width 100%
+  font-weight 600
+  width auto
+  margin 0
+  padding 15px 0
+  font-size 16px
+
+.cloud-container
+  float left
+  width 100%
+  padding $APP_PADDING
+  box-sizing border-box
+  background #fff
+  box-shadow $SHADOW
+  border-radius 15px
+  .main-subtitle
+    float left
+    width 100%
+    font-weight 700
+    font-size 15px
+    box-sizing border-box
+    padding 3px 3px 10px
+    margin 0
+  .inner-title
+    float left
+    width 100%
+    padding 25px 0px 18px
+    margin 0
+    font-weight 700
+    font-size 14px
+    box-sizing border-box
+  .row
+    float left
+    width 100%
+    box-sizing border-box
+    padding 10px 0
+    border-bottom 1px solid rgba(0,0,0,.1)
+    .label
+      float left
+      width 100%
+      font-size 13px
+    .value
+      float left
+      width 100%
+      font-size 16px
+      margin-top 10px
+      .el-input__inner
+        border-radius 25px
+    &.no-border
+      border none
+    &.cut
+      width calc(50% - 20px)
+      margin 0 20px 0 0
+
+.blue-button
+  background #4bb5ff
+  color #fff
+  border #4bb5ff
+  transition .2s linear
+
+.questionnaire
+  float left
+  width 100%
+  font-size 14px
+  display grid
+  grid auto-flow / 1fr 1fr 1fr
+  &.column-count-two
+    grid auto-flow / 1fr 1fr
+  &.column-count-one
+    grid auto-flow / 1fr
+.question-column
+  float left
+  width calc(33.33% - 20px)
+  padding 0 10px
+  box-sizing border-box
+.question-container
+  float left
+  width 100%
+.question
+  float left
+  width 100%
+  box-sizing border-box
+  padding 8px 4px 4px
+  display flex
+  font-size 14px
+  line-height 28px
+  .label
+    float left
+    width calc(100% - 240px)
+    margin 0
+    display flex
+    align-items center
+    font-weight normal
+    font-size 14px
+  .value
+    float right
+    width 229px
+    margin 0 5px
+    display flex
+    align-items center
+.flex-container
+  float left
+  width 100%
+  display flex
+  padding $APP_PADDING
+  box-sizing border-box
+
+#authorization
+  position relative
+  display flex
+  justify-content center
+  align-items center
+  width 100%
+  min-height 100vh
+  background $AUTH_BACK_COLOR
+  .auth-form
+    width 100%
+    max-width 330px
+    height auto
+    box-shadow $SHADOW
+    box-sizing border-box
+    padding 20px
+    border-radius 15px
+    background #fff
+    z-index 2
+    &-title
+      color #000
+      margin-bottom 15px
+      font-size 23px
+      text-align center
+    .el-form-item
+      margin-top 15px
+    .el-form-item__label
+      line-height 25px
+  .el-button.el-button--primary
+    background $AUTH_BACK_COLOR
+
+.auth-back
+  background-image url(../assets/logo.svg)
+  content ''
+  position absolute
+  top 15%
+  left 10%
+  background-repeat no-repeat
+  opacity 0.2
+  width 80%
+  height 70%
+  z-index 1
+
+.auth-detail
+  width 550px
+  margin-right 40px
+  color rgba(255, 255, 255, 0.7)
+  z-index 2
+  .auth-logo
+    margin-bottom 20px
+    img
+      width 80px
+      height auto
+      opacity 0.7
+  .auth-title
+    font-size 30px
+    line-height 42px
+    font-weight 100
+    letter-spacing 2px
+    margin-bottom 10px
+  .auth-subtitle
+    font-size 15px
+    letter-spacing 1px
+    margin-bottom 30px
+  .auth-social-media
+    margin-bottom 20px
+    .auth-icon
+      display inline-block
+      margin-right 10px
+      height 18px
+      width 18px
+      transition .2s linear
+      color #fff
+      &:hover
+        color rgba(255, 255, 255, 0.7)
+  .auth-line
+    border-top 1px solid rgba(255, 255, 255, 0.1)
+    padding-top 20px
+    span
+      font-size 14px
+      color #fff
+      cursor pointer
+
+.auth-btns
+  .el-button
+    width 100%
+    margin 5px 0
+
+#registration
+  position relative
+  display flex
+  justify-content center
+  align-items center
+  width 100%
+  min-height 100vh
+  background $AUTH_BACK_COLOR
+  .el-button.el-button--primary
+    background $AUTH_BACK_COLOR
+
+.reg-form-title
+    color #000
+    margin-bottom 15px
+    font-size 23px
+    text-align center
+
+.form-registration
+  width 100%
+  max-width 700px
+  height auto
+  box-shadow $SHADOW
+  box-sizing border-box
+  padding 20px
+  border-radius 15px
+  background #fff
+  z-index 2
+  .item
+    margin 25px 15px
+    width calc(100% - 30px)
+    font-size 15px
+    text-decoration underline
+    .el-button
+      width 200px
+  .item-login
+    text-align center
+    margin-top 25px
+    width 100%
+    font-size 15px
+  .red-text
+    display inline-block
+    margin 10px
+    text-align center
+    font-size 15px
+    color #f96332
+    text-decoration none
+    cursor pointer
+  .el-form-item
+    display inline-block
+    margin 15px
+    width calc(50% - 30px)
+  .el-form-item__label
+    line-height 25px
+
+#dashboard
+  .dashboard-container
+    margin-bottom 10px
+    h2
+      font-weight 500
+      font-size 17px
+    .el-search
+      float right
+      margin-right 0
+      .el-form-item__content
+        width 250px
+
+.dashboard-statistics
+  float left
+  width 100%
+
+.bar-chart-appointments
+  float left
+  width 100%
+  display flex
+  justify-content space-around
+.chart-bar-appointments-container
+  width calc(100% - 600px)
+.chart-appointments-legends
+  width 500px
+.chart-appointments-legend
+  float left
+  width 100%
+  padding 12px
+  box-sizing border-box
+  border-top 1px solid rgba(0,0,0,0.07)
+  background #fff
+  font-size 14px
+  display flex
+  justify-content space-around
+  &:hover
+    background rgba(0,0,0,0.07)
+    cursor pointer span
+  span
+    width 130px
+  .color
+    background rgb(97, 97, 97)
+    height 15px
+    width 15px
+    margin-top 2px
+    border-radius 50%
+.dashboard-link
+  float left
+  width 100%
+  font-size 15px
+  margin 0 0 30px 0
+
+.dashboard-boxes
+  float left
+  width 100%
+  display flex
+  justify-content space-between
+
+.dashboard-box
+  background #fff
+  max-width 320px
+  width 20%
+  height auto
+  padding 20px
+  text-align center
+  box-sizing border-box
+  border-radius 15px
+  box-shadow $SHADOW
+  i
+    margin-bottom 20px
+  .clinics
+    color #FFC107
+  .doctors
+    color #60bafd
+  .patients
+    color #616161
+  .appointments
+    color #50d38a
+  h6
+    font-weight normal
+    font-size 14px
+    margin-bottom 5px
+  span
+    font-size 28px
+    font-weight 500
+
+.text-align-right
+  text-align right
+
+.margin-top
+  margin-top 20px
+
+.sync-date
+  margin-top 20px
+  font-size 15px
+
+.main-navbar
+  position absolute
+  top 0
+  left 50px
+  height 100vh
+  box-sizing border-box
+  width 250px
+  overflow-y auto
+  overflow-x hidden
+  font-size 14px
+  background #fff
+  z-index 1
+  .row, .row-center
+    float left
+    width 100%
+    padding 2px
+  .row-center
+    text-align center
+  .row-title
+    margin-top 20px
+    border-bottom solid 1px #e6e6e6
+    padding-bottom 10px
+  .bold
+    font-weight 700
+
+.profile-link
+  a
+    opacity 1
+  &:hover
+    background $BACK_COLOR
+    transition .3s linear
+
+.profile-social-icons
+  i
+    color #313740
+    font-size 16px
+    margin 5px 9px
+    cursor pointer
+
+.avatar-container
+  float left
+  width 100%
+  text-align center
+  margin 10px 0
+
+.avatar
+  display inline-block
+  width 75px
+  height 75px
+  border-radius 50%
+  overflow hidden
+  border 3px solid #fff
+  box-shadow 0 1px 1px 0 rgba(0,0,0,0.7)
+  img
+    width 100%
+    height 100%
+    object-fit cover
+  .first-letters
+    font-size 30px
+    font-weight bold
+    margin-top 15px
+
+.workspace-container
+  float left
+  width 100%
+  box-sizing border-box
+
+.workspace
+  float left
+  width 100%
+  box-sizing border-box
+
+.input-error
+  input
+   border 1px solid $RED!important
+
+.title, .title-center
+  font-weight 700
+  font-size 16px
+  margin 0 0 30px 0
+
+.main-subtitle
+  float left
+  width 100%
+  font-size 15px
+  margin 30px 0
+
+.top-title
+  float left
+  width 100%
+  box-sizing border-box
+  font-weight 500
+  font-size 18px
+  padding $APP_PADDING
+  background #fff
+  border-bottom solid 1px #e6e6e6
+
+.title-center
+  margin 20px 0
+  text-align center
+
+.view-data
+  float left
+  width 100%
+  background #fff
+  box-sizing border-box
+  border-radius 10px
+  padding 20px
+  box-shadow $SHADOW
+  .col
+    float left
+    width 50%
+  .row
+    float left
+    width 100%
+    margin 5px 0
+    padding 5px 0 12px
+    border-bottom 1px solid rgba(0,0,0,.1)
+    font-size 14px
+    .cell
+      display inline-block
+      margin-left 10px
+    .note
+      margin-top 20px
+      display inline-block
+      width 100%
+      line-height 20px
+  h2
+    float left
+    width 100%
+    font-size 18px
+    border-bottom 1px solid #323232
+    padding-bottom 20px
+    margin-bottom 15px
+  h3
+    float left
+    width 100%
+    font-size 15px
+    border-bottom 1px solid #323232
+    padding 20px 0
+    margin-bottom 15px
+
+.shadow
+  box-shadow $SHADOW
+
+.appointments-book
+  float left
+  width 100%
+  box-sizing border-box
+
+.appointments-top-panel
+  float left
+  width 100%
+  padding 20px
+  background #f4f7f6
+  border 1px solid #d3dae5
+  box-sizing border-box
+
+.appointments-main-date
+  margin-right 10px
+
+.chart-container
+  float left
+  width 100%
+  margin-bottom 30px
+  .chart
+    float left
+    width 250px
+    height 250px
+    position relative
+
+.el-option-left
+  float left
+.el-option-right
+  float right
+  color #8492a6
+  font-size 11px
+
+.b-table .table-wrapper
+  box-shadow 0 2px 20px 0 rgba(0,0,0,0.1)
+  border-radius 8px
+
+.input-width
+  width 500px
+
+.appointment-table-title
+  display inline-block
+  margin-left 5px
+
+.auth-clear
+  float right
+  margin 7px 0 0 0
+
+.demo-send-form
+  .el-form-item
+    margin-bottom 5px
+  .el-form-item__label
+    padding-bottom 0
+  .el-button
+    margin-top 20px
+    width 100%
+
+.cursor-pointer
+  cursor pointer
+
+.profile-dialog
+  .el-dialog
+    width 50%
+
+.profile-form
+  overflow auto
+  .el-form-item
+    float left
+    width calc(50% - 20px)
+    margin-right 20px
+  &::after
+    content ""
+    clear both
+    display table
+  .profile-title
+    float left
+    width 100%
+    font-size 15px
+    font-weight 700
+    margin 5px 0 20px
+
+.btn-container
+  float left
+  width 100%
+  text-align center
+  margin-top 15px
+  .el-button
+    padding 12px 46px
+
+.x-ray
+  float left
+  width 50%
+  margin-bottom 20px
+  p
+    float left
+    width 100%
+    font-size 15px
+    margin-bottom 20px
+    font-weight 600
+  .x-ray-img
+    float left
+    width 100%
+    text-align left
+  img
+    display inline-block
+  &-loader
+    float left
+    width 100%
+    height 300px
+    background #fff
+
+.alpino-table
+  float left
+  width 100%
+
+.alpino-card
+  float left
+  width calc(25% - 20px)
+  margin 10px
+  height 270px
+  background #fff
+  padding $APP_PADDING
+  box-shadow $SHADOW
+  border-radius 15px
+  box-sizing border-box
+  text-align center
+  overflow hidden
+  p
+    float left
+    width 100%
+    font-size 13px
+    margin-top 10px
+
+.alpino-card-img
+  float left
+  width 100%
+  img
+    width 80px
+    height 80px
+    display inline-block
+    border-radius 50%
+    border 3px solid #fff
+    box-shadow 0 1px 1px 0 rgba(0,0,0,1)
+.alpino-card-title
+  float left
+  width 100%
+  margin-top 18px
+  font-weight bold
+  font-size 15px
+
+.alpino-card-social-icons
+  float left
+  width 100%
+  margin-top 5px
+  i
+    color rgb(249, 99, 50)
+    font-size 16px
+    margin 5px 9px
+    cursor pointer
+
+.search-form
+  position fixed
+  top 0
+  left 0
+  height 100%
+  width 100%
+  background rgba(34, 37, 43, 0.95)
+  z-index 9999
+  .search-close
+    position absolute
+    right 15px
+    top 20px
+  .search-container
+    display block
+    margin 0 auto
+    width 100%
+    max-width 1140px
+  .search-input
+    margin-top 120px
+    box-sizing border-box
+    background #fff
+    border-radius 10px
+    padding $APP_PADDING
+  .search-links
+    margin-top 30px
+    box-sizing border-box
+    background #fff
+    border-radius 10px
+    padding $APP_PADDING
+    min-height 300px
+  .search-col
+    float left
+    width 25%
+    h4
+      float left
+      width 100%
+      margin 10px 0
+      font-size 15px
+  .search-link
+    float left
+    width 100%
+    color #f96332
+    font-size 14px
+    margin-top 10px
+    position relative
+    padding-left 20px
+    cursor pointer
+    &:before
+      content '\f30f'
+      position absolute
+      transition .5s
+      left 0px
+      font-size 12px
+      font-family 'Material-Design-Iconic-Font'
+      color #9e9e9e
+      top 3px
+    &:hover:before
+      left 6px
+
+  .search-social
+    margin-top 60px
+    text-align center
+    .el-button
+      margin 0 20px
+      padding 17px
+      &:hover
+        background #f96332
+        color #fff
+      &:focus
+        background #f96332
+        color #fff
+
+  .search-bot-title
+    margin-top 10px
+    color #fff
+    text-align center
+    font-size 13px
+
+
+
+

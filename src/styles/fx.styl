@@ -1,0 +1,125 @@
+.fx-table
+  display block
+  width 100%
+  .el-tag
+    margin 1px
+    height 16px
+    line-height 14px
+    font-size 11px
+  a
+    color #323232
+
+.fx-row-container
+  display block
+  width 100%
+
+.fx-row
+  display flex
+  width 100%
+  justify-content: space-between
+  color: #000
+.fx-row:hover
+  background #eef1f6
+
+.fx-sticky
+  top 0
+  left 0
+  position sticky
+  z-index 10
+
+.fx-cols
+  display flex
+  width 100%
+  background #fff
+.fx-col
+  display block
+  width 15%
+  flex 1 1 auto
+  box-sizing border-box
+.fx-col-time
+  width 30px
+
+.fx-cl
+  display block
+  height 30px
+  box-sizing border-box
+  border 1px solid #dfe6ec
+  font-size 13px
+  line-height 30px
+  text-align center
+  color #323232
+  &:hover
+    background #eef1f6
+
+.fx-cell
+  display block
+  position relative
+  width 100%
+  height 30px
+  box-sizing border-box
+  z-index 2
+
+.fx-emp
+  display block
+  width 100%
+  height 30px
+  box-sizing border-box
+  z-index 1
+
+.dropover
+  transition .2s linear
+  background #eef1f6!important
+
+.fx-appointment
+  position absolute
+  width 100%
+  left 0
+  top 0
+  overflow hidden
+  z-index 3
+  pointer-events none
+  p
+    height 30px
+
+.fx-app-delete
+  position absolute
+  top 0px
+  right 60px
+  z-index 4
+  pointer-events visible
+
+.fx-app-edit
+  position absolute
+  top 0px
+  right 30px
+  z-index 4
+  pointer-events visible
+
+.fx-app-drag
+  position absolute
+  top 0px
+  right 0px
+  z-index 4
+  cursor move
+  pointer-events visible
+
+.fx-grey
+  background #d3dae5
+  &:hover
+    background #d3dae5
+
+.legends
+  float left
+  width 100%
+  margin-bottom 25px
+
+.legend
+  float left
+  width auto
+  margin 10px 10px 0 0
+  padding 5px 10px
+  p
+    padding 5px
+
+.fx-pointer
+  cursor pointer

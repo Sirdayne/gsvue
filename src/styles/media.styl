@@ -1,0 +1,256 @@
+$APP_PADDING = 10px
+$PRIMARY_COLOR = #22252b
+
+@media only screen and (max-width : 1700px)
+  .questionnaire
+    grid auto-flow / 1fr 1fr
+    &.column-count-two
+      grid auto-flow / 1fr
+    &.column-count-one
+      grid auto-flow / 1fr
+
+@media only screen and (max-width : 1400px)
+  .questionnaire
+    grid auto-flow / 1fr
+    &.column-count-two
+      grid auto-flow / 1fr
+    &.column-count-one
+      grid auto-flow / 1fr
+
+  .bar-chart-appointments
+    display block
+    .chart-bar-appointments-container
+      width 100%
+    .chart-appointments-legends
+      margin-top 30px
+      width 100%
+  .chart-appointments-legend
+    span
+      width 80px
+
+@media only screen and (max-width : 1000px)
+  .header-sidebar
+    position fixed
+    width 100%
+    height 50px
+    z-index 999
+    .nav
+      width 30px
+      height 30px
+      margin 10px 5px
+      padding 5px 0 0 8px
+      &-power
+        float right
+        position static
+      &-setting
+        float right
+        position static
+    .nav-toggle
+      float left
+
+  .app-content
+    position absolute
+    top 50px
+    left 0
+    width 100%
+    min-height calc(100vh - 50px)
+    height auto
+    border none
+    transition 0s linear
+    &.active
+      float left
+      position static
+      width 100%
+    &.not-logged
+      top 0
+      min-height 100vh
+
+  .main-navbar
+    float left
+    position static
+    width 100%
+    margin-top 50px
+    height auto
+
+  .avatar-container
+    margin 0
+  .main-navbar .row
+    margin-top 5px
+
+  .float-container, .top-title, .cloud-container
+    padding $APP_PADDING
+  .x-container
+    padding 0 $APP_PADDING
+
+  #dashboard .dashboard-container .el-search
+    float none
+
+  .form-registration
+      padding $APP_PADDING
+      .item
+        margin 15px 10px
+        width calc(100% - 20px)
+      .el-form-item
+        margin 10px
+        width calc(100% - 20px)
+      .el-form-item__label
+        line-height 20px
+
+  .view-data
+    padding $APP_PADDING
+    .col
+      width 100%
+
+  .appointments-main-date
+    margin-right 0
+    margin-bottom 10px
+
+  .b-table .table td
+    padding $APP_PADDING
+
+  .el-menu
+    border 1px solid rgba(0,0,0,.1)
+    padding 5px 0
+  .el-submenu, .el-menu-item-media
+    display none
+  .el-submenu.is-active.is-opened, .el-menu-item-media.is-active
+    display block
+  .el-submenu .el-menu-item
+    text-align center
+    height 35px
+    line-height 35px
+  .el-menu-item.is-active
+    background $PRIMARY_COLOR
+    color #fff
+
+  .question
+    display block
+    padding-top 5px
+    border-top 1px solid rgba(0,0,0,.1)
+  .question > .label
+    width auto
+  .question > .value
+    float left
+    width auto
+  .question .value .el-radio-group
+    margin 7px 0 0 5px
+
+  .banner img
+    margin: 0 20px 0 10px
+
+  .super-button
+    margin 2px 10%
+    width 80%
+
+  .el-dialog
+    max-width 300px
+
+  .input-width
+    width 260px
+
+  .el-message
+    min-width 320px
+
+  .appointments-book
+    overflow-x auto
+    overflow-y hidden
+
+  .appointment-table-title
+    display none
+
+  .col-time-mob
+    position sticky
+    top 0
+    left 0
+    background #fff
+    max-width 60px
+    z-index 4
+  .col-none-mob
+    display none
+
+  #authorization
+    display flex
+    flex-direction column
+  .auth-detail
+    margin 20px 0
+    .auth-logo
+      margin-bottom 15px
+    .auth-title
+      font-size 17px
+      line-height 23px
+      letter-spacing 0
+    .auth-subtitle
+      font-size 14px
+      line-height 18px
+      letter-spacing 0
+      margin-bottom 10px
+
+  .dashboard-boxes
+    flex-direction column
+    align-items center
+  .dashboard-box
+    width calc(100% - 20px)
+    max-width none
+    margin 10px
+    padding 10px
+
+  .profile-dialog
+    .el-dialog
+      width 90%
+      max-width none
+
+  .x-ray
+    width 100%
+  .alpino-card
+    width calc(50% - 20px)
+
+  .search-form
+    overflow-x scroll
+    .search-input
+      margin-top 50px
+    .search-links
+      margin-top 10px
+    .search-social
+      margin-top 10px
+      .el-button
+        margin 0 10px
+        padding 7px
+    .search-col
+      float none
+      display inline-block
+      width 50%
+
+@media only screen and (max-width : 700px)
+  .auth-detail
+    width 100%
+  .auth-form
+    max-width auto
+    width 100%
+  .cloud-container
+    .row.cut
+      width 100%
+      margin 0
+  .profile-form
+    .el-form-item
+      width 100%
+      margin 0 0 10px
+  .header-sidebar
+    .nav
+      width 26px
+      height 26px
+      margin 13px 3px
+      padding 5px 0 0 8px
+
+  .alpino-card
+    width calc(100% - 20px)
+  .search-form
+    .search-col
+      width 100%
+
+@media only screen and (max-width : 350px)
+  .header-sidebar
+    .nav
+      width 23px
+      height 23px
+      margin 11px 3px
+      padding 5px 0 0 8px
