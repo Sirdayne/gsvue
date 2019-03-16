@@ -1,5 +1,3 @@
-# globalspeller-ui
-
 > A Vue.js project
 
 ## Build Setup
