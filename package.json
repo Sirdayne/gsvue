@@ -12,7 +12,7 @@
     "build:uat": "node build/build.uat.js"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "buefy": "^0.7.1",
     "chart.js": "^2.7.3",
     "element-ui": "^2.4.5",
