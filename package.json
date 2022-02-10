@@ -18,7 +18,7 @@
     "element-ui": "^2.4.5",
     "font-awesome": "^4.7.0",
     "moment": "^2.22.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "randomcolor": "^0.5.3",
     "reset-css": "^4.0.0",
     "vue": "^2.5.2",
